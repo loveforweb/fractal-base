@@ -1,0 +1,23 @@
+.footer {
+  .footer-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.4rem;
+  }
+
+  .footer-list-item {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+
+}

@@ -1,0 +1,25 @@
+{
+    "preview": "@preview",
+    "status": "wip",
+    "context": {
+        "title": "nav",
+        "hasSearch": true,
+        "items": [
+            {
+                "name": "Nav item 1",
+                "href": "!#"
+            },
+            {
+                "name": "Nav item 2",
+                "href": "!#"
+            },
+            {
+                "name": "Nav item 3",
+                "href": "!#"
+            },{
+                "name": "Nav item 4",
+                "href": "!#"
+            }
+        ]
+    }
+}

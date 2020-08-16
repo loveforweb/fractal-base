@@ -1,0 +1,20 @@
+.nav {
+  .nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.4rem;
+  }
+
+  .nav-link {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "preview": "@preview-no-wrapper",
+    "status": "ready",
+    "context": {
+        "title": "footer",
+        "columnBase": "4",
+        "linkList": [
+            {
+                "link": [{
+                    "name": "About us",
+                    "href": "!#"
+                },{
+                    "name": "Find us",
+                    "href": "!#"
+                },{
+                    "name": "Contact us",
+                    "href": "!#"
+                }]
+            },
+            {
+                "link": [{
+                    "name": "Legal Notices",
+                    "href": "!#"
+                },{
+                    "name": "Privacy Policy",
+                    "href": "!#"
+                },{
+                    "name": "Cookie Settings",
+                    "href": "!#"
+                }]
+            },
+            {
+                "link": [{
+                    "name": "Accessibility",
+                    "href": "!#"
+                },{
+                    "name": "Responsible Business",
+                    "href": "!#"
+                },{
+                    "name": "Careers",
+                    "href": "!#"
+                }]
+            }
+        ]
+    }
+}

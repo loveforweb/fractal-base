@@ -1,0 +1,15 @@
+<div class="component footer">
+    <div class="container">
+        <div class="row">
+        {{#each linkList}}
+            <div class="col-12 col-md-{{../columnBase}}" >
+            <ul class="footer-list">
+            {{#each link}}
+                <li class="footer-list-item"><a class="footer-link" href="{{href}}">{{name}}</a></li>
+            {{/each}}
+            </ul>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</div>

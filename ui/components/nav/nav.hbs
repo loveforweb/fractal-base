@@ -1,0 +1,12 @@
+<nav class="component nav">
+    <ul class="nav-list">
+        {{#each items}}
+        <li class="nav-list-item">
+            <a href="{{href}}" class="nav-link">{{name}}</a>
+        </li>
+        {{/each}}
+        <li>
+            {{render '@search-button'}}
+        </li>
+    </ul>
+</nav>

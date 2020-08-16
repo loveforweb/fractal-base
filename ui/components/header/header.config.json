@@ -1,0 +1,8 @@
+{
+    "preview": "@preview-no-wrapper",
+    "status": "ready",
+    "context": {
+        "title": "Site Name",
+        "logo": "/images/fractal-logo.png"
+    }
+}

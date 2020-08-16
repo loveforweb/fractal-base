@@ -1,0 +1,28 @@
+{
+  "name": "fractal-test",
+  "version": "0.1.0",
+  "scripts": {
+    "generate": "node ./tools/generate.js"
+  },
+  "dependencies": {
+    "@frctl/fractal": "^1.3.0",
+    "bootstrap": "^4.5.2",
+    "generate-template-files": "^3.0.0",
+    "gulp-remove-content": "^1.0.1",
+    "gulp-tap": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-file": "^0.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "webpack": "^4.44.1",
+    "webpack-stream": "^5.2.1"
+  }
+}
