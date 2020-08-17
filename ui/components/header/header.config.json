@@ -3,6 +3,6 @@
     "status": "ready",
     "context": {
         "title": "Site Name",
-        "logo": "/images/fractal-logo.png"
+        "logo": "/assets/images/fractal-logo.png"
     }
 }

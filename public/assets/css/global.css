@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -2840,9 +2841,12 @@ html {
   line-height: 1.15; }
 
 body {
-  font-family: Montserrat,sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #001e62;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 1.6rem; }
+  body.dark {
+    background: #2b2b2b; }
 
 p {
   font-size: 1.4rem; }
@@ -2897,6 +2901,63 @@ p {
     position: relative;
     z-index: 1; }
 
+.fixture-block {
+  display: flex;
+  flex-direction: column;
+  background: #2b2b2b;
+  color: white;
+  padding: 1.2rem;
+  border: 0.1rem solid #424242; }
+  .fixture-block .fixture-block-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+  .fixture-block .game-details {
+    display: grid;
+    grid-template-columns: 1fr 4rem 1fr; }
+  .fixture-block .team {
+    display: flex;
+    flex-direction: column; }
+    .fixture-block .team.team--home .team-badge {
+      order: 1; }
+    .fixture-block .team.team--away .team-score {
+      margin-left: auto; }
+  .fixture-block .team-score {
+    width: calc(100% - 6rem); }
+  .fixture-block .team-identity {
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    font-weight: 300; }
+  .fixture-block .game-splitter {
+    margin: 0 1.2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0.4rem; }
+  .fixture-block.fixture-block--row .game-details {
+    grid-template-rows: 1fr;
+    grid-template-columns: none;
+    width: 100%;
+    grid-row-gap: 1rem; }
+  .fixture-block.fixture-block--row .team {
+    display: grid;
+    grid-template-columns: 1fr 10rem; }
+  .fixture-block.fixture-block--row .team-identity {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; }
+  .fixture-block.fixture-block--row .team.team--home .team-badge {
+    order: 0; }
+  .fixture-block.fixture-block--row .team.team--home .team-score {
+    margin-left: auto; }
+  .fixture-block.fixture-block--row .team-name {
+    text-align: left; }
+  .fixture-block.fixture-block--row .team-score {
+    display: inline; }
+  .fixture-block.fixture-block--row .game-splitter {
+    display: none; }
+
 .footer .footer-list {
   margin: 0;
   padding: 0;
@@ -2912,6 +2973,14 @@ p {
   color: black; }
   .footer .footer-link:hover {
     text-decoration: underline; }
+
+.game-date-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem; }
 
 .header-wrapper .header-content {
   display: flex;
@@ -2959,6 +3028,12 @@ p {
     height: 100%;
     width: 100%; }
 
+.stadium-name-city {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.2rem; }
+
 .tags a {
   padding: .5rem .6rem .2rem;
   color: #001e62;
@@ -2967,3 +3042,31 @@ p {
   font-size: 1rem;
   text-decoration: none;
   margin: 0 1rem 1rem 0; }
+
+.team-badge {
+  display: block;
+  width: 4rem;
+  margin: 0 1.2rem; }
+  .team-badge img {
+    width: 100%; }
+
+.team-name {
+  display: block;
+  text-align: center;
+  flex: 1 1 auto; }
+  .team-name .team-name-long {
+    display: none; }
+  .team-name .team-name-short {
+    font-size: 2.6rem; }
+
+@media (min-width: 576px) {
+  .team-name-long {
+    display: block; }
+  .team-name-short {
+    display: none; } }
+
+.team-score {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700; }

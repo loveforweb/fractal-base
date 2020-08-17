@@ -1,0 +1,23 @@
+.team-name {
+    display: block;
+    text-align: center;
+    flex: 1 1 auto;
+
+    .team-name-long {
+        display: none;
+    }
+
+    .team-name-short {
+        font-size: 2.6rem;
+    }
+}
+
+@include sm {
+    .team-name-long {
+        display: block;
+    }
+
+    .team-name-short {
+        display: none;
+    }
+}

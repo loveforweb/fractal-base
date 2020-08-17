@@ -1,0 +1,103 @@
+.fixture-block {
+    display: flex;
+    flex-direction: column;
+    background: #2b2b2b;
+    color: white;
+    padding: 1.2rem;
+    border: 0.1rem solid #424242;
+    
+    .fixture-block-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game-details {
+        display: grid;
+        grid-template-columns: 1fr 4rem 1fr;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+
+        &.team--home {
+            .team-badge {
+                order: 1;
+            }
+        }
+
+        &.team--away {
+            .team-score {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .team-score {
+        width: calc(100% - 6rem);
+    }
+    
+    .team-identity {
+        font-size: 2.2rem;
+        display: flex;
+        flex-direction: row;
+        font-weight: 300;
+    }
+
+    .game-splitter {
+        margin: 0 1.2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 0.4rem;
+    }
+
+    &.fixture-block--row {
+        .game-details {
+            grid-template-rows: 1fr;
+            grid-template-columns: none;
+            width: 100%;
+            grid-row-gap: 1rem;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: 1fr 10rem;
+        }
+
+        .team-identity {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+        }
+
+        .team {
+            &.team--home {
+                .team-badge {
+                    order: 0;
+                }
+
+                .team-score {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        .team-name {
+            text-align: left;
+        }
+
+        .team-score {
+            display: inline;
+        }
+
+        .game-splitter {
+            display: none;
+        }
+    }
+}
+
+
+@include sm {
+}

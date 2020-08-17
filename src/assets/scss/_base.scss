@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
 html {
     box-sizing: border-box;
     font-size: 0.625em;
@@ -9,9 +10,14 @@ html {
 }
 
 body {
-    font-family: Montserrat,sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #001e62;
     overflow: hidden;
+    font-size: 1.6rem;
+
+    &.dark {
+        background: #2b2b2b;
+    }
 }
 
 p {

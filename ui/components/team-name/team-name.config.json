@@ -1,0 +1,9 @@
+{
+    "preview": "@preview",
+    "status": "ready",
+    "context": {
+        "city": "San Francisco",
+        "name": "49ers",
+        "abbreviation": "SF"
+    }
+}

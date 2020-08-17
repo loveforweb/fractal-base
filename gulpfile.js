@@ -43,6 +43,15 @@ function js(cb) {
   });
 }
 
+function copy(done) {
+  return gulp
+    .src(['src/data/**/*', 'src/assets/images/**/*'], {
+      base: 'src',
+    })
+    .pipe(gulp.dest('public'));
+  done();
+}
+
 function scss(done) {
   return gulp
     .src(['src/assets/scss/**/*.scss'])
@@ -79,4 +88,7 @@ function fractal_start(done) {
   done();
 }
 
-gulp.task('default', gulp.series(cleanjs, fractal_start, scss, js, watch));
+gulp.task(
+  'default',
+  gulp.series(cleanjs, copy, fractal_start, scss, js, watch)
+);

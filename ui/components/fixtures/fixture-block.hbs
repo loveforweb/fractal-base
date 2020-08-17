@@ -1,0 +1,51 @@
+<div class="component fixture-block {{variantClass}}">
+    <div class="fixture-block-row">
+        <div class="game-details">
+            <div class="team team--home">
+                <div class="team-identity">
+                    {{> @team-badge teamLogo=events.references.teamReferences.1.officialLogoImageSrc}}
+                    {{> @team-name city=events.references.teamReferences.1.city name=events.references.teamReferences.1.name abbreviation=events.references.teamReferences.1.abbreviation}}
+                </div>
+                {{#if hasResults}}
+                    {{> @team-score scoreTotal=events.games.0.score.homeScoreTotal}}
+                {{else}}
+                    {{#if variantClass}}
+                        {{> @team-score scoreTotal=0}}
+                    {{/if}}
+                {{/if}}
+            </div>
+
+            <div class="game-splitter">@</div>
+
+            <div class="team team--away">
+                <div class="team-identity">
+                    {{> @team-badge teamLogo=events.references.teamReferences.0.officialLogoImageSrc}}
+                    {{> @team-name city=events.references.teamReferences.0.city name=events.references.teamReferences.0.name abbreviation=events.references.teamReferences.0.abbreviation}}
+                </div>
+                {{#if hasResults}}
+                    {{> @team-score scoreTotal=events.games.0.score.awayScoreTotal}}
+                {{else}}
+                    {{#if variantClass}}
+                        {{> @team-score scoreTotal=0}}
+                    {{/if}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+
+    <div class="fixture-block-row">
+        {{> @game-date-time date="Sun 8th September 2019" time="18:00"}}
+    </div>
+
+    <div class="fixture-block-row">
+        {{> @stadium-name-city name=events.references.venueReferences.0.name city=events.references.venueReferences.0.city}}
+    </div>
+    {{#if hasResults}}
+    <div class="fixture-block-row">
+        <h2>Drive summary</h2>
+        <div class="accordion">
+            
+        </div>
+    </div>
+    {{/if}}
+</div>
