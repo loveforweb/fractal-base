@@ -2910,7 +2910,8 @@ p {
   background: #2b2b2b;
   color: white;
   padding: 1.2rem;
-  border: 0.1rem solid var(--tundora); }
+  border: 0.1rem solid var(--tundora);
+  margin-bottom: 4rem; }
   .fixture-block .fixture-block-row {
     display: flex;
     flex-direction: row;
@@ -2997,7 +2998,7 @@ p {
   font-size: 4rem; }
 
 .header-wrapper .logo {
-  width: 80px; }
+  width: 8rem; }
   .header-wrapper .logo img {
     width: 100%; }
 
@@ -3017,8 +3018,8 @@ p {
     text-decoration: underline; }
 
 .search-button {
-  height: 30px;
-  width: 30px;
+  height: 3rem;
+  width: 3rem;
   border: none;
   background: none; }
 
@@ -3044,40 +3045,40 @@ p {
   position: relative;
   margin-bottom: 2rem; }
   .standings-table .scroller {
-    margin-left: 110px;
+    margin-left: 11rem;
     overflow-x: scroll;
     overflow-y: visible;
-    padding-bottom: 5px;
+    padding-bottom: .5rem;
     width: calc(100% - $sideHeadingWidth); }
   .standings-table .table-row {
     display: grid;
-    grid-template-columns: repeat(4, 50px) repeat(3, 1fr) 50px;
-    border-bottom: 1px solid var(--tundora);
-    width: 450px;
+    grid-template-columns: repeat(4, 5rem) repeat(3, 1fr) 5rem;
+    border-bottom: 0.1rem solid var(--tundora);
+    width: 45rem;
     justify-content: center;
     align-items: center; }
     .standings-table .table-row:first-of-type {
-      border-top: 1px solid var(--tundora);
-      border-bottom: 3px solid var(--tundora);
+      border-top: 0.1rem solid var(--tundora);
+      border-bottom: 0.3rem solid var(--tundora);
       font-weight: 700; }
       .standings-table .table-row:first-of-type .table-cell.table-cell--sticky {
-        border-top: 1px solid var(--tundora);
-        border-bottom: 3px solid var(--tundora);
-        padding: 10px; }
+        border-top: 0.1rem solid var(--tundora);
+        border-bottom: 0.3rem solid var(--tundora);
+        padding: 1rem; }
     .standings-table .table-row .table-cell {
-      border-right: 1px solid var(--tundora);
+      border-right: 0.1rem solid var(--tundora);
       text-align: center;
-      padding: 10px; }
+      padding: 1rem; }
       .standings-table .table-row .table-cell:first-of-type {
         position: absolute;
         left: 0;
-        width: 110px;
+        width: 11rem;
         text-align: left;
-        border-bottom: 1px solid var(--tundora);
-        border-left: 1px solid var(--tundora);
-        margin-top: -1px; }
+        border-bottom: 0.1rem solid var(--tundora);
+        border-left: 0.1rem solid var(--tundora);
+        margin-top: -.1rem; }
       .standings-table .table-row .table-cell.table-cell--sticky {
-        padding: 7px 10px 8px; }
+        padding: .7rem 1rem .8rem; }
   .standings-table .table-cell--span-2 {
     grid-column: 1 / span 2; }
   .standings-table .team {
@@ -3085,15 +3086,15 @@ p {
     flex-direction: row;
     align-items: center; }
   .standings-table .team-badge {
-    margin-right: 5px;
+    margin-right: .5rem;
     width: 3rem; }
   .standings-table .team-name {
     text-align: left; }
 
 .conference-heading {
-  padding: 12px;
+  padding: 1.2rem;
   background: #555555;
-  border: 1px solid var(--tundora);
+  border: 0.1rem solid var(--tundora);
   font-size: 1.8rem; }
 
 @media (min-width: 768px) {
@@ -3101,10 +3102,10 @@ p {
     position: relative;
     margin-bottom: 4rem; }
     .standings-table .scroller {
-      margin-left: 240px;
+      margin-left: 24rem;
       width: calc(100% - $sideHeadingWidth); }
     .standings-table .table-row .table-cell:first-of-type {
-      width: 240px; } }
+      width: 24rem; } }
 
 .tags a {
   padding: .5rem .6rem .2rem;
