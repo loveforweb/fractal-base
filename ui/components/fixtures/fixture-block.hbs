@@ -3,7 +3,7 @@
         <div class="game-details">
             <div class="team team--home">
                 <div class="team-identity">
-                    {{> @team-badge teamLogo=events.references.teamReferences.1.officialLogoImageSrc}}
+                    {{> @team-badge teamBadge=events.references.teamReferences.1.officialLogoImageSrc}}
                     {{> @team-name city=events.references.teamReferences.1.city name=events.references.teamReferences.1.name abbreviation=events.references.teamReferences.1.abbreviation}}
                 </div>
                 {{#if hasResults}}
@@ -19,7 +19,7 @@
 
             <div class="team team--away">
                 <div class="team-identity">
-                    {{> @team-badge teamLogo=events.references.teamReferences.0.officialLogoImageSrc}}
+                    {{> @team-badge teamBadge=events.references.teamReferences.0.officialLogoImageSrc}}
                     {{> @team-name city=events.references.teamReferences.0.city name=events.references.teamReferences.0.name abbreviation=events.references.teamReferences.0.abbreviation}}
                 </div>
                 {{#if hasResults}}

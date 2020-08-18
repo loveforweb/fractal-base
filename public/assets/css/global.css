@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
 *,
 *::before,
 *::after {
@@ -2831,6 +2830,9 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+:root {
+  --tundora: #424242; }
+
 html {
   box-sizing: border-box;
   font-size: 0.625em;
@@ -2846,7 +2848,8 @@ body {
   overflow: hidden;
   font-size: 1.6rem; }
   body.dark {
-    background: #2b2b2b; }
+    background: #2b2b2b;
+    color: #ffffff; }
 
 p {
   font-size: 1.4rem; }
@@ -2907,7 +2910,7 @@ p {
   background: #2b2b2b;
   color: white;
   padding: 1.2rem;
-  border: 0.1rem solid #424242; }
+  border: 0.1rem solid var(--tundora); }
   .fixture-block .fixture-block-row {
     display: flex;
     flex-direction: row;
@@ -2923,6 +2926,8 @@ p {
       order: 1; }
     .fixture-block .team.team--away .team-score {
       margin-left: auto; }
+  .fixture-block .team-badge {
+    margin: 0 1.2rem; }
   .fixture-block .team-score {
     width: calc(100% - 6rem); }
   .fixture-block .team-identity {
@@ -3032,7 +3037,74 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  text-align: center; }
+
+.standings-table {
+  position: relative;
+  margin-bottom: 2rem; }
+  .standings-table .scroller {
+    margin-left: 110px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 5px;
+    width: calc(100% - $sideHeadingWidth); }
+  .standings-table .table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 50px) repeat(3, 1fr) 50px;
+    border-bottom: 1px solid var(--tundora);
+    width: 450px;
+    justify-content: center;
+    align-items: center; }
+    .standings-table .table-row:first-of-type {
+      border-top: 1px solid var(--tundora);
+      border-bottom: 3px solid var(--tundora);
+      font-weight: 700; }
+      .standings-table .table-row:first-of-type .table-cell.table-cell--sticky {
+        border-top: 1px solid var(--tundora);
+        border-bottom: 3px solid var(--tundora);
+        padding: 10px; }
+    .standings-table .table-row .table-cell {
+      border-right: 1px solid var(--tundora);
+      text-align: center;
+      padding: 10px; }
+      .standings-table .table-row .table-cell:first-of-type {
+        position: absolute;
+        left: 0;
+        width: 110px;
+        text-align: left;
+        border-bottom: 1px solid var(--tundora);
+        border-left: 1px solid var(--tundora);
+        margin-top: -1px; }
+      .standings-table .table-row .table-cell.table-cell--sticky {
+        padding: 7px 10px 8px; }
+  .standings-table .table-cell--span-2 {
+    grid-column: 1 / span 2; }
+  .standings-table .team {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+  .standings-table .team-badge {
+    margin-right: 5px;
+    width: 3rem; }
+  .standings-table .team-name {
+    text-align: left; }
+
+.conference-heading {
+  padding: 12px;
+  background: #555555;
+  border: 1px solid var(--tundora);
+  font-size: 1.8rem; }
+
+@media (min-width: 768px) {
+  .standings-table {
+    position: relative;
+    margin-bottom: 4rem; }
+    .standings-table .scroller {
+      margin-left: 240px;
+      width: calc(100% - $sideHeadingWidth); }
+    .standings-table .table-row .table-cell:first-of-type {
+      width: 240px; } }
 
 .tags a {
   padding: .5rem .6rem .2rem;
@@ -3045,8 +3117,7 @@ p {
 
 .team-badge {
   display: block;
-  width: 4rem;
-  margin: 0 1.2rem; }
+  width: 4rem; }
   .team-badge img {
     width: 100%; }
 
@@ -3054,15 +3125,15 @@ p {
   display: block;
   text-align: center;
   flex: 1 1 auto; }
-  .team-name .team-name-long {
+  .team-name .team-name-city,
+  .team-name .team-name-name {
     display: none; }
-  .team-name .team-name-short {
-    font-size: 2.6rem; }
 
-@media (min-width: 576px) {
-  .team-name-long {
-    display: block; }
-  .team-name-short {
+@media (min-width: 768px) {
+  .team-name .team-name-city,
+  .team-name .team-name-name {
+    display: inline-block; }
+  .team-name .team-name-abbr {
     display: none; } }
 
 .team-score {

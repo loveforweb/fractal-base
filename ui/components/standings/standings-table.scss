@@ -1,0 +1,105 @@
+$sideHeadingWidth: 110px;
+
+.standings-table {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .scroller {
+    margin-left: $sideHeadingWidth;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 5px;
+    width: calc(100% - $sideHeadingWidth);
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: repeat(4, 50px) repeat(3, 1fr) 50px;
+    border-bottom: 1px solid var(--tundora);
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+
+    &:first-of-type {
+      border-top: 1px solid var(--tundora);
+      border-bottom: 3px solid var(--tundora);
+      font-weight: 700;
+
+      .table-cell {
+        &.table-cell--sticky {
+          border-top: 1px solid var(--tundora);
+          border-bottom: 3px solid  var(--tundora);
+          padding: 10px;
+        }
+      }
+  }
+
+  .table-cell {
+    border-right: 1px solid var(--tundora);
+    text-align: center;
+    padding: 10px;
+
+      &:first-of-type {
+        position: absolute;
+        left: 0;
+        width: $sideHeadingWidth;
+        text-align: left;
+        border-bottom: 1px solid var(--tundora);
+        border-left: 1px solid var(--tundora);
+        margin-top: -1px;
+      }
+
+      &.table-cell--sticky {
+        padding: 7px 10px 8px;
+      }
+    }
+  }
+
+  .table-cell--span-2 {
+    grid-column: 1 / span 2;
+  }
+
+  .team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+  }
+
+  .team-badge {
+    margin-right: 5px;
+    width: 3rem;
+  }
+
+  .team-name {
+    text-align: left;
+  }
+}
+
+.conference-heading {
+  padding: 12px;
+  background: #555555;
+  border: 1px solid var(--tundora);
+  font-size: 1.8rem;
+}
+
+@include md {
+  $sideHeadingWidth: 240px;
+  .standings-table {
+    position: relative;
+    margin-bottom: 4rem;
+  
+    .scroller {
+      margin-left: $sideHeadingWidth;
+      width: calc(100% - $sideHeadingWidth);
+    }
+  
+    .table-row {
+      .table-cell {
+        &:first-of-type {
+          width: $sideHeadingWidth;
+        }
+      }
+    }
+  }
+}
+

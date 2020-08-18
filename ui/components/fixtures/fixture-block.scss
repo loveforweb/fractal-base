@@ -4,7 +4,7 @@
     background: #2b2b2b;
     color: white;
     padding: 1.2rem;
-    border: 0.1rem solid #424242;
+    border: 0.1rem solid var(--tundora);
     
     .fixture-block-row {
         display: flex;
@@ -33,6 +33,10 @@
                 margin-left: auto;
             }
         }
+    }
+
+    .team-badge {
+        margin: 0 1.2rem;
     }
 
     .team-score {
@@ -96,8 +100,4 @@
             display: none;
         }
     }
-}
-
-
-@include sm {
 }

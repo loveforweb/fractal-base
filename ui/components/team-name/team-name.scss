@@ -3,21 +3,21 @@
     text-align: center;
     flex: 1 1 auto;
 
-    .team-name-long {
+    .team-name-city,
+    .team-name-name {
         display: none;
-    }
-
-    .team-name-short {
-        font-size: 2.6rem;
     }
 }
 
-@include sm {
-    .team-name-long {
-        display: block;
-    }
+@include md {
+    .team-name {
+        .team-name-city,
+        .team-name-name {
+            display: inline-block;
+        }
 
-    .team-name-short {
-        display: none;
+        .team-name-abbr {
+            display: none;
+        }
     }
 }

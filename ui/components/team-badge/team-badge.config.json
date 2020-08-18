@@ -2,6 +2,6 @@
     "preview": "@preview",
     "status": "ready",
     "context": {
-        "teamLogo": "https://static.www.nfl.com/image/private/t_q-best/league/dxibuyxbk0b9ua5ih9hn"
+        "teamBadge": "https://static.www.nfl.com/image/private/t_q-best/league/dxibuyxbk0b9ua5ih9hn"
     }
 }

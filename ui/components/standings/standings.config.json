@@ -1,0 +1,467 @@
+{
+  "preview": "@preview-dark",
+  "context": {
+    "data": {
+      "division": "NFC North",
+      "teams": [
+        {
+          "team": {
+            "id": 62,
+            "city": "Green Bay",
+            "name": "Packers",
+            "abbreviation": "GB",
+            "homeVenue": {
+              "id": 54,
+              "name": "Lambeau Field"
+            },
+            "teamColoursHex": [
+              "#203731",
+              "#ffb612"
+            ],
+            "socialMediaAccounts": [
+              {
+                "mediaType": "TWITTER",
+                "value": "packers"
+              }
+            ],
+            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/gppfvr7n8gljgjaqux2x"
+          },
+          "stats": {
+            "gamesPlayed": 16,
+            
+            "fieldGoals": {
+              "fgBlk": 0,
+              "fgMade": 22,
+              "fgAtt": 24,
+              "fgPct": 91.7,
+              "fgMade1_19": 1,
+              "fgAtt1_19": 1,
+              "fg1_19Pct": 100,
+              "fgMade20_29": 2,
+              "fgAtt20_29": 2,
+              "fg20_29Pct": 100,
+              "fgMade30_39": 11,
+              "fgAtt30_39": 11,
+              "fg30_39Pct": 100,
+              "fgMade40_49": 7,
+              "fgAtt40_49": 8,
+              "fg40_49Pct": 87.5,
+              "fgMade50Plus": 1,
+              "fgAtt50Plus": 2,
+              "fg50PlusPct": 50,
+              "fgLng": 496
+            },
+            "extraPointAttempt": {
+              "xpBlk": 0,
+              "xpMade": 40,
+              "xpAtt": 41,
+              "xpPct": 97.6,
+              "fgAndXpPts": 106
+            },
+            "miscellaneous": {
+              "firstDownsTotal": 320,
+              "firstDownsPass": 190,
+              "firstDownsRush": 90,
+              "firstDownsPenalty": 40,
+              "thirdDowns": 73,
+              "thirdDownsAtt": 203,
+              "thirdDownsPct": 36,
+              "fourthDowns": 7,
+              "fourthDownsAtt": 14,
+              "fourthDownsPct": 50,
+              "penalties": 100,
+              "penaltyYds": 774,
+              "offensePlays": 1020,
+              "offenseYds": 5528,
+              "offenseAvgYds": 5.4,
+              "totalTD": 44
+            },
+            "standings": {
+              "wins": 13,
+              "losses": 3,
+              "ties": 0,
+              "otWins": 0,
+              "otLosses": 0,
+              "winPct": 0.812,
+              "pointsFor": 369,
+              "pointsAgainst": 313,
+              "pointDifferential": 56
+            },
+            "twoPointAttempts": {
+              "twoPtAtt": 3,
+              "twoPtMade": 3,
+              "twoPtPassAtt": 2,
+              "twoPtPassMade": 2,
+              "twoPtRushAtt": 1,
+              "twoPtRushMade": 1
+            }
+          },
+          "overallRank": {
+            "rank": 3,
+            "gamesBack": 1
+          },
+          "conferenceRank": {
+            "conferenceName": "NFC",
+            "rank": 2,
+            "gamesBack": 0
+          },
+          "divisionRank": {
+            "divisionName": "NFC North",
+            "rank": 1,
+            "gamesBack": 0
+          },
+          "playoffRank": {
+            "conferenceName": "NFC",
+            "divisionName": null,
+            "appliesTo": "CONFERENCE",
+            "rank": 2
+          }
+        },
+        {
+          "team": {
+            "id": 63,
+            "city": "Minnesota",
+            "name": "Vikings",
+            "abbreviation": "MIN",
+            "homeVenue": {
+              "id": 141,
+              "name": "US Bank Stadium"
+            },
+            "teamColoursHex": [
+              "#4f2683",
+              "#ffc62f"
+            ],
+            "socialMediaAccounts": [
+              {
+                "mediaType": "TWITTER",
+                "value": "Vikings"
+              }
+            ],
+            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/teguylrnqqmfcwxvcmmz"
+          },
+          "stats": {
+            "gamesPlayed": 16,
+            
+            "fieldGoals": {
+              "fgBlk": 0,
+              "fgMade": 27,
+              "fgAtt": 29,
+              "fgPct": 93.1,
+              "fgMade1_19": 0,
+              "fgAtt1_19": 0,
+              "fg1_19Pct": 0,
+              "fgMade20_29": 10,
+              "fgAtt20_29": 10,
+              "fg20_29Pct": 100,
+              "fgMade30_39": 9,
+              "fgAtt30_39": 9,
+              "fg30_39Pct": 100,
+              "fgMade40_49": 5,
+              "fgAtt40_49": 7,
+              "fg40_49Pct": 71.4,
+              "fgMade50Plus": 3,
+              "fgAtt50Plus": 3,
+              "fg50PlusPct": 100,
+              "fgLng": 477
+            },
+            "extraPointAttempt": {
+              "xpBlk": 1,
+              "xpMade": 40,
+              "xpAtt": 44,
+              "xpPct": 90.9,
+              "fgAndXpPts": 121
+            },
+            
+            "miscellaneous": {
+              "firstDownsTotal": 314,
+              "firstDownsPass": 171,
+              "firstDownsRush": 106,
+              "firstDownsPenalty": 37,
+              "thirdDowns": 83,
+              "thirdDownsAtt": 194,
+              "thirdDownsPct": 42.8,
+              "fourthDowns": 8,
+              "fourthDownsAtt": 15,
+              "fourthDownsPct": 53.3,
+              "penalties": 96,
+              "penaltyYds": 896,
+              "offensePlays": 970,
+              "offenseYds": 5655,
+              "offenseAvgYds": 5.8,
+              "totalTD": 46
+            },
+            "standings": {
+              "wins": 10,
+              "losses": 6,
+              "ties": 0,
+              "otWins": 0,
+              "otLosses": 0,
+              "winPct": 0.625,
+              "pointsFor": 407,
+              "pointsAgainst": 303,
+              "pointDifferential": 104
+            },
+            "twoPointAttempts": {
+              "twoPtAtt": 3,
+              "twoPtMade": 1,
+              "twoPtPassAtt": 3,
+              "twoPtPassMade": 1,
+              "twoPtRushAtt": 0,
+              "twoPtRushMade": 0
+            }
+          },
+          "overallRank": {
+            "rank": 8,
+            "gamesBack": 4
+          },
+          "conferenceRank": {
+            "conferenceName": "NFC",
+            "rank": 5,
+            "gamesBack": 3
+          },
+          "divisionRank": {
+            "divisionName": "NFC North",
+            "rank": 2,
+            "gamesBack": 3
+          },
+          "playoffRank": {
+            "conferenceName": "NFC",
+            "divisionName": null,
+            "appliesTo": "CONFERENCE",
+            "rank": 5
+          }
+        },
+        {
+          "team": {
+            "id": 60,
+            "city": "Chicago",
+            "name": "Bears",
+            "abbreviation": "CHI",
+            "homeVenue": {
+              "id": 48,
+              "name": "Soldier Field"
+            },
+            "teamColoursHex": [
+              "#0b162a",
+              "#c83803"
+            ],
+            "socialMediaAccounts": [
+              {
+                "mediaType": "TWITTER",
+                "value": "ChicagoBears"
+              }
+            ],
+            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/ra0poq2ivwyahbaq86d2"
+          },
+          "stats": {
+            "gamesPlayed": 16,
+            
+            "fieldGoals": {
+              "fgBlk": 0,
+              "fgMade": 23,
+              "fgAtt": 28,
+              "fgPct": 82.1,
+              "fgMade1_19": 1,
+              "fgAtt1_19": 1,
+              "fg1_19Pct": 100,
+              "fgMade20_29": 8,
+              "fgAtt20_29": 8,
+              "fg20_29Pct": 100,
+              "fgMade30_39": 9,
+              "fgAtt30_39": 10,
+              "fg30_39Pct": 90,
+              "fgMade40_49": 3,
+              "fgAtt40_49": 7,
+              "fg40_49Pct": 42.9,
+              "fgMade50Plus": 2,
+              "fgAtt50Plus": 2,
+              "fg50PlusPct": 100,
+              "fgLng": 448
+            },
+            "extraPointAttempt": {
+              "xpBlk": 0,
+              "xpMade": 27,
+              "xpAtt": 29,
+              "xpPct": 93.1,
+              "fgAndXpPts": 96
+            },
+            
+            "miscellaneous": {
+              "firstDownsTotal": 297,
+              "firstDownsPass": 178,
+              "firstDownsRush": 85,
+              "firstDownsPenalty": 34,
+              "thirdDowns": 77,
+              "thirdDownsAtt": 216,
+              "thirdDownsPct": 35.6,
+              "fourthDowns": 7,
+              "fourthDownsAtt": 21,
+              "fourthDownsPct": 33.3,
+              "penalties": 102,
+              "penaltyYds": 846,
+              "offensePlays": 1020,
+              "offenseYds": 4749,
+              "offenseAvgYds": 4.7,
+              "totalTD": 28
+            },
+            "standings": {
+              "wins": 8,
+              "losses": 8,
+              "ties": 0,
+              "otWins": 0,
+              "otLosses": 0,
+              "winPct": 0.5,
+              "pointsFor": 272,
+              "pointsAgainst": 298,
+              "pointDifferential": -26
+            },
+            "twoPointAttempts": {
+              "twoPtAtt": 1,
+              "twoPtMade": 1,
+              "twoPtPassAtt": 1,
+              "twoPtPassMade": 1,
+              "twoPtRushAtt": 0,
+              "twoPtRushMade": 0
+            }
+          },
+          "overallRank": {
+            "rank": 16,
+            "gamesBack": 6
+          },
+          "conferenceRank": {
+            "conferenceName": "NFC",
+            "rank": 8,
+            "gamesBack": 5
+          },
+          "divisionRank": {
+            "divisionName": "NFC North",
+            "rank": 3,
+            "gamesBack": 5
+          },
+          "playoffRank": {
+            "conferenceName": "NFC",
+            "divisionName": null,
+            "appliesTo": "CONFERENCE",
+            "rank": 8
+          }
+        },
+        {
+          "team": {
+            "id": 61,
+            "city": "Detroit",
+            "name": "Lions",
+            "abbreviation": "DET",
+            "homeVenue": {
+              "id": 53,
+              "name": "Ford Field"
+            },
+            "teamColoursHex": [
+              "#0076b6",
+              "#b0b7bc",
+              "#000000",
+              "#ffffff"
+            ],
+            "socialMediaAccounts": [
+              {
+                "mediaType": "TWITTER",
+                "value": "Lions"
+              }
+            ],
+            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/ocvxwnapdvwevupe4tpr"
+          },
+          "stats": {
+            "gamesPlayed": 16,
+            
+            "fieldGoals": {
+              "fgBlk": 1,
+              "fgMade": 26,
+              "fgAtt": 31,
+              "fgPct": 83.9,
+              "fgMade1_19": 0,
+              "fgAtt1_19": 0,
+              "fg1_19Pct": 0,
+              "fgMade20_29": 11,
+              "fgAtt20_29": 11,
+              "fg20_29Pct": 100,
+              "fgMade30_39": 2,
+              "fgAtt30_39": 3,
+              "fg30_39Pct": 66.7,
+              "fgMade40_49": 6,
+              "fgAtt40_49": 9,
+              "fg40_49Pct": 66.7,
+              "fgMade50Plus": 7,
+              "fgAtt50Plus": 8,
+              "fg50PlusPct": 87.5,
+              "fgLng": 570
+            },
+            "extraPointAttempt": {
+              "xpBlk": 0,
+              "xpMade": 35,
+              "xpAtt": 36,
+              "xpPct": 97.2,
+              "fgAndXpPts": 113
+            },
+            
+            "miscellaneous": {
+              "firstDownsTotal": 313,
+              "firstDownsPass": 196,
+              "firstDownsRush": 82,
+              "firstDownsPenalty": 35,
+              "thirdDowns": 90,
+              "thirdDownsAtt": 220,
+              "thirdDownsPct": 40.9,
+              "fourthDowns": 5,
+              "fourthDownsAtt": 13,
+              "fourthDownsPct": 38.5,
+              "penalties": 113,
+              "penaltyYds": 937,
+              "offensePlays": 1022,
+              "offenseYds": 5549,
+              "offenseAvgYds": 5.4,
+              "totalTD": 36
+            },
+            "standings": {
+              "wins": 3,
+              "losses": 12,
+              "ties": 1,
+              "otWins": 0,
+              "otLosses": 0,
+              "winPct": 0.188,
+              "pointsFor": 329,
+              "pointsAgainst": 423,
+              "pointDifferential": -94
+            },
+            "twoPointAttempts": {
+              "twoPtAtt": 2,
+              "twoPtMade": 0,
+              "twoPtPassAtt": 2,
+              "twoPtPassMade": 0,
+              "twoPtRushAtt": 0,
+              "twoPtRushMade": 0
+            }
+          },
+          "overallRank": {
+            "rank": 32,
+            "gamesBack": 10.5
+          },
+          "conferenceRank": {
+            "conferenceName": "NFC",
+            "rank": 15,
+            "gamesBack": 9.5
+          },
+          "divisionRank": {
+            "divisionName": "NFC North",
+            "rank": 4,
+            "gamesBack": 9.5
+          },
+          "playoffRank": {
+            "conferenceName": "NFC",
+            "divisionName": null,
+            "appliesTo": "CONFERENCE",
+            "rank": 15
+          }
+        }
+      ]
+    }
+  }
+}
