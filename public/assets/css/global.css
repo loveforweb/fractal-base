@@ -2833,7 +2833,8 @@ html {
     margin-left: auto !important; } }
 
 :root {
-  --tundora: #424242; }
+  --tundora: #424242;
+  --midnight-blue: #001e62; }
 
 html {
   box-sizing: border-box;
@@ -2846,15 +2847,26 @@ html {
 
 body {
   font-family: 'Oswald', sans-serif;
-  color: #001e62;
+  color: var(--midnight-blue);
   overflow: hidden;
   font-size: 1.6rem; }
   body.dark {
     background: #2b2b2b;
     color: #ffffff; }
 
+a {
+  color: var(--midnight-blue); }
+  a:hover {
+    color: #2b2b2b; }
+  .dark a {
+    color: white; }
+    .dark a:hover {
+      color: white; }
+
 p {
   font-size: 1.4rem; }
+  .dark p {
+    color: inherit; }
 
 .preview-wrapper {
   padding: 40px 0; }
@@ -2879,28 +2891,17 @@ p {
     margin-bottom: 1.7rem; }
   .article-panel p {
     line-height: 1.5;
-    color: #001440;
     margin-bottom: 1.5rem;
     font-weight: 400;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3; }
-  .article-panel-image img {
-    width: 100%; }
-  .article-panel .faux-link {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    text-indent: 200%;
-    white-space: nowrap;
-    background: transparent;
-    z-index: 0; }
-  .article-panel-footer {
+  .article-panel .article-panel-image {
+    margin-bottom: 15px; }
+    .article-panel .article-panel-image img {
+      width: 100%; }
+  .article-panel .article-panel-footer {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -3162,13 +3163,16 @@ p {
       width: 24rem; } }
 
 .tags a {
-  padding: .5rem .6rem .2rem;
-  color: #001e62;
-  border: .1rem solid #d7d2cb;
+  padding: .2rem .6rem;
+  color: var(--midnight-blue);
+  border: .1rem solid #232323;
   display: inline-block;
   font-size: 1rem;
   text-decoration: none;
   margin: 0 1rem 1rem 0; }
+  .tags a:hover {
+    background: var(--midnight-blue);
+    color: white; }
 
 .team-badge {
   display: block;

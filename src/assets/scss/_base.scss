@@ -3,6 +3,7 @@
 
 :root {
     --tundora: #424242;
+    --midnight-blue: #001e62;
 }
 
 html {
@@ -17,7 +18,7 @@ html {
 
 body {
     font-family: 'Oswald', sans-serif;
-    color: #001e62;
+    color: var(--midnight-blue);
     overflow: hidden;
     font-size: 1.6rem;
 
@@ -27,8 +28,28 @@ body {
     }
 }
 
+a {
+    color: var(--midnight-blue);
+
+    &:hover {
+        color: #2b2b2b;
+    }
+    
+    .dark & {
+        color: white;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
+
 p {
     font-size: 1.4rem;
+
+    .dark & {
+        color: inherit;
+    }
 }
 
 .preview-wrapper {

@@ -63,6 +63,7 @@ function scss(done) {
 }
 
 function watch(done) {
+  gulp.watch(['src/assets/images/**/*'], gulp.series(copy));
   gulp.watch(['ui/**/*.scss', 'src/assets/scss/**/*.scss'], gulp.series(scss));
   gulp.watch(['ui/**/*.js', 'src/assets/js/**/*.js'], gulp.series(cleanjs, js));
   done();

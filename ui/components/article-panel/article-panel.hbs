@@ -1,15 +1,14 @@
 <div class="component article-panel">
-    <div class="article-panel-image">
-        <img src="{{content.imageSrc}}" />
-    </div>
-    <div class="article-panel-text">
-        <h2>{{title}}</h2>
-        <p>{{content.text}}</p>
-    </div>
+    <a href="{{ path href }}" class="faux-link"> 
+        <div class="article-panel-image">
+            <img src="{{content.imageSrc}}" />
+        </div>
+        <div class="article-panel-text">
+            <h2>{{content.title}}</h2>
+            <p>{{content.text}}</p>
+        </div>
+    </a>
     <footer class="article-panel-footer">
         {{render '@tags'}}
     </footer>
-
-    <a href="{{ path href }}" class="faux-link"> 
-    </a>
 </div>

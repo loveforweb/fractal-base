@@ -2,12 +2,11 @@
     "preview": "@col-4",
     "status": "ready",
     "context": {
-        "title": "Article Panel Component",
         "href": "/components/preview/article-page",
         "content": {
-            "text": "How the NHS could capitalise on the success stories of this pandemic to create lasting change across the organisation",
-            "imageSrc": "/images/meeting.jpg",
-            "heading": "Keeping our health heroes flying"
+            "title": "Article Heading",
+            "text": "This is a summary title for the article",
+            "imageSrc": "/assets/images/american-football.jpg"
         }
     }
 }
