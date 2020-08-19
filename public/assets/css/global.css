@@ -2854,6 +2854,9 @@ body {
     background: #2b2b2b;
     color: #ffffff; }
 
+main {
+  margin-top: 4rem; }
+
 a {
   color: var(--midnight-blue); }
   a:hover {

@@ -1,3 +1,25 @@
 <div class="container">
-    standings page
+    <div class="row">
+        <div class="col">
+            <div class="conference-heading">
+                {{> '@standings-table-header' title=NFC.conference}}
+            </div>
+            <div class="conference-tables">
+                {{> '@standings-table' data=NFC.north}}
+                {{> '@standings-table' data=NFC.east}}
+                {{> '@standings-table' data=NFC.south}}
+                {{> '@standings-table' data=NFC.west}}
+            </div>
+
+            <div class="conference-heading">
+            {{> '@standings-table-header' title=AFC.conference}}
+            </div>
+            <div class="conference-tables">
+                {{> '@standings-table' data=AFC.north}}
+                {{> '@standings-table' data=AFC.east}}
+                {{> '@standings-table' data=AFC.south}}
+                {{> '@standings-table' data=AFC.west}}
+            </div>
+        </div>
+    </div>
 </div>
