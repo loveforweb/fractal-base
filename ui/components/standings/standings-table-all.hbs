@@ -1,6 +1,6 @@
 
 <div class="conference-heading">
-    {{NFC.conference}}
+    {{> '@standings-table-header' title=NFC.conference}}
 </div>
 <div class="conference-tables">
     {{> '@standings-table' data=NFC.north}}
@@ -10,7 +10,7 @@
 </div>
 
 <div class="conference-heading">
-    {{AFC.conference}}
+   {{> '@standings-table-header' title=AFC.conference}}
 </div>
 <div class="conference-tables">
     {{> '@standings-table' data=AFC.north}}

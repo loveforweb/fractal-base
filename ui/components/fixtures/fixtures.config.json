@@ -1,5 +1,5 @@
 {
-  "preview": "@preview-dark",
+  "preview": "@preview-dark-col",
   "status": "ready",
   "context": {
     "title": "fixture-block",
