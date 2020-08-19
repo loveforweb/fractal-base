@@ -1,4 +1,9 @@
 <div class="component player-stat">
     <span class="stat-title">{{title}}</span>
-    <span class="stat-value">{{#if value}}{{value}}{{else}}--{{/if}}{{#ifEquals title 'Weight'}}<span class="unit">lbs</span>{{/ifEquals}}</span>
+    <span class="stat-value">
+        {{#if value}}
+            {{value}}{{#ifEquals title 'Weight'}}<span class="unit">lbs</span>{{/ifEquals}}
+        {{else}}
+            --
+        {{/if}}</span>
 </div>
