@@ -1,0 +1,49 @@
+.player-profile {
+    padding: 1.2rem;
+    border: 0.1rem solid var(--tundora);
+    margin-bottom: 3rem;
+    min-height: 18rem;
+    
+    .player-details {
+        display: flex;
+    }
+
+    .player-name {
+        margin-top: 1rem;
+        padding-top: .8rem;
+        font-size: 2rem;
+        border-top: 0.1rem solid var(--tundora);
+    }
+
+    .player-profile-image {
+        width: 50%;
+    }
+
+    .player-profile-quick-stats {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 50%;
+
+        .player-stat {
+            width: 50%;
+        }
+    }
+
+    .player-number {
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1;
+        position: absolute;
+
+        .player-stat {
+            display: flex;
+            grid-template-columns: none;
+            grid-template-rows: none;
+            justify-content: center;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+        }
+    }
+}

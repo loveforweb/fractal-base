@@ -1,0 +1,18 @@
+.player-stat {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    .stat-title {
+        font-weight: 300;
+    }
+
+    .stat-value {
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    .unit {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}

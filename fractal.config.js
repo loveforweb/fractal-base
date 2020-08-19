@@ -11,6 +11,20 @@ const path = require('path');
 const fractal = (module.exports = require('@frctl/fractal').create());
 
 /*
+ * Handlebar helpers
+ */
+const hbs = require('@frctl/handlebars')({
+  helpers: {
+    ifEquals: function (arg1, arg2, options) {
+      return arg1 == arg2 ? options.fn(this) : options.inverse(this);
+    },
+  },
+  /* other configuration options here */
+});
+
+fractal.components.engine(hbs);
+
+/*
  * Give your project a title.
  */
 fractal.set('project.title', 'Sports Score Card');

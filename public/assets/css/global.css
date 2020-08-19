@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap");
 *,
 *::before,
 *::after {
@@ -3017,6 +3019,54 @@ p {
   .nav .nav-link:hover {
     text-decoration: underline; }
 
+.player-image img {
+  width: 100%; }
+
+.player-profile {
+  padding: 1.2rem;
+  border: 0.1rem solid var(--tundora);
+  margin-bottom: 3rem;
+  min-height: 18rem; }
+  .player-profile .player-details {
+    display: flex; }
+  .player-profile .player-name {
+    margin-top: 1rem;
+    padding-top: .8rem;
+    font-size: 2rem;
+    border-top: 0.1rem solid var(--tundora); }
+  .player-profile .player-profile-image {
+    width: 50%; }
+  .player-profile .player-profile-quick-stats {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%; }
+    .player-profile .player-profile-quick-stats .player-stat {
+      width: 50%; }
+  .player-profile .player-number {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1;
+    position: absolute; }
+    .player-profile .player-number .player-stat {
+      display: flex;
+      grid-template-columns: none;
+      grid-template-rows: none;
+      justify-content: center; }
+    .player-profile .player-number .stat-value {
+      font-size: 3rem; }
+
+.player-stat {
+  display: grid;
+  grid-template-rows: auto 1fr; }
+  .player-stat .stat-title {
+    font-weight: 300; }
+  .player-stat .stat-value {
+    font-weight: 500;
+    font-size: 3rem; }
+  .player-stat .unit {
+    font-size: 1.4rem;
+    font-weight: 300; }
+
 .search-button {
   height: 3rem;
   width: 3rem;
@@ -3040,6 +3090,10 @@ p {
   align-items: center;
   font-size: 1.2rem;
   text-align: center; }
+
+.standings-table-header {
+  padding: 1.2rem;
+  font-size: 1.8rem; }
 
 .standings-table {
   position: relative;
