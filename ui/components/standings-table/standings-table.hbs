@@ -1,35 +1,35 @@
-<div class="component standings-table">
+<div class="component standings-table" role="table">
     <div class="scroller">
-    <div class="table-row table-row--heading">
-        <div class="table-cell table-cell--sticky">
-            {{data.division}}
-        </div>
-        <div class="table-cell">P</div>
-        <div class="table-cell">W</div>
-        <div class="table-cell">L</div>
-        <div class="table-cell">T</div>
-        <div class="table-cell table-cell-strong">PCT</div>
-        <div class="table-cell">PF</div>
-        <div class="table-cell">PA</div>
-        <div class="table-cell">PD</div>
-    </div>
-    {{#each data.teams}}
-    <div class="table-row">
-        <div class="table-cell table-cell--sticky">
-            <div class="team">
-                {{> @team-badge teamBadge=team.officialLogoImageSrc}}
-                {{> @team-name city=team.city name=team.name abbreviation=team.abbreviation}}
+        <div class="table-row table-row--heading" role="row">
+            <div class="table-cell table-cell--sticky" aria-label="Division" role="columnheader">
+                {{data.division}}
             </div>
+            <div class="table-cell" aria-label="Played" role="columnheader">P</div>
+            <div class="table-cell" aria-label="Wins" role="columnheader">W</div>
+            <div class="table-cell" aria-label="Losses" role="columnheader">L</div>
+            <div class="table-cell" aria-label="Ties" role="columnheader">T</div>
+            <div class="table-cell table-cell-strong" aria-label="Win Percentage" role="columnheader">PCT</div>
+            <div class="table-cell" aria-label="Points For" role="columnheader">PF</div>
+            <div class="table-cell" aria-label="Points Against" role="columnheader">PA</div>
+            <div class="table-cell" aria-label="Points Difference" role="columnheader">PD</div>
         </div>
-        <div class="table-cell">{{stats.gamesPlayed}}</div>
-        <div class="table-cell">{{stats.standings.wins}}</div>
-        <div class="table-cell">{{stats.standings.losses}}</div>
-        <div class="table-cell">{{stats.standings.ties}}</div>
-        <div class="table-cell table-cell-strong">{{stats.standings.winPct}}</div>
-        <div class="table-cell">{{stats.standings.pointsFor}}</div>
-        <div class="table-cell">{{stats.standings.pointsAgainst}}</div>
-        <div class="table-cell">{{stats.standings.pointDifferential}}</div>
-    </div>
-    {{/each}}
+        {{#each data.teams}}
+        <div class="table-row" role="row">
+            <div class="table-cell table-cell--sticky" role="rowheader">
+                <div class="team">
+                    {{> @team-badge teamBadge=team.officialLogoImageSrc}}
+                    {{> @team-name city=team.city name=team.name abbreviation=team.abbreviation}}
+                </div>
+            </div>
+            <div class="table-cell" role="cell">{{stats.gamesPlayed}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.wins}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.losses}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.ties}}</div>
+            <div class="table-cell table-cell-strong" role="cell">{{stats.standings.winPct}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.pointsFor}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.pointsAgainst}}</div>
+            <div class="table-cell" role="cell">{{stats.standings.pointDifferential}}</div>
+        </div>
+        {{/each}}
     </div>
 </div>

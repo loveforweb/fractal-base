@@ -1,19 +1,21 @@
 <div class="component player-profile">
-    <div class="player-details">
+    <div class="player-name">
         <div class="player-number">
-            {{> '@player-stat' title="#" value=player.jerseyNumber }}
+            {{> '@player-stat' title="#" value=player.jerseyNumber ariaLabelTitle="Jersey number" }}
         </div>
+
+        {{player.firstName}} {{player.lastName}}
+    </div>
+    <div class="player-details">
+        
         <div class="player-profile-image">
         {{> '@player-image' imageSrc=player.officialImageSrc firstname=player.firstName lastname=player.lastName}}
         </div>
         <div class="player-profile-quick-stats">
-            {{> '@player-stat' title="Pos" value=player.primaryPosition }}
-            {{> '@player-stat' title="Age" value=player.age }}
-            {{> '@player-stat' title="Height" value=player.height }}
-            {{> '@player-stat' title="Weight" value=player.weight }}
+            {{> '@player-stat' title="Pos" value=player.primaryPosition ariaLabelTitle="Player position" }}
+            {{> '@player-stat' title="Age" value=player.age ariaLabelTitle="Player age" }}
+            {{> '@player-stat' title="Height" value=player.height ariaLabelTitle="Player height" }}
+            {{> '@player-stat' title="Weight" value=player.weight ariaLabelTitle="Player position" }}
         </div>
-    </div>
-    <div class="player-name">
-        {{player.firstName}} {{player.lastName}}
     </div>
 </div>

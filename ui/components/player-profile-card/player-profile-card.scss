@@ -4,15 +4,35 @@
     margin-bottom: 3rem;
     min-height: 18rem;
     
-    .player-details {
+
+    .player-name {
+        margin-bottom: 1rem;
+        padding-bottom: .8rem;
+        font-size: 2rem;
+        border-bottom: 0.1rem solid var(--tundora);
         display: flex;
     }
 
-    .player-name {
-        margin-top: 1rem;
-        padding-top: .8rem;
-        font-size: 2rem;
-        border-top: 0.1rem solid var(--tundora);
+    .player-number {
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1;
+        margin-right: 1.2rem;;
+
+        .player-stat {
+            display: flex;
+            grid-template-columns: none;
+            grid-template-rows: none;
+            justify-content: center;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+        }
+    }
+
+
+    .player-details {
+        display: flex;
     }
 
     .player-profile-image {
@@ -29,20 +49,4 @@
         }
     }
 
-    .player-number {
-        font-family: 'Work Sans', sans-serif;
-        line-height: 1;
-        position: absolute;
-
-        .player-stat {
-            display: flex;
-            grid-template-columns: none;
-            grid-template-rows: none;
-            justify-content: center;
-        }
-
-        .stat-value {
-            font-size: 3rem;
-        }
-    }
 }
