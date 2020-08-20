@@ -5,7 +5,7 @@
     color: white;
     padding: 1.2rem;
     border: 0.1rem solid var(--tundora);
-    margin-bottom: 4rem;
+    height: 100%;
     
     .fixture-block-row {
         display: flex;
@@ -41,7 +41,7 @@
     }
 
     .team-score {
-        width: calc(100% - 6rem);
+        width: calc(100% - 5rem);
     }
     
     .team-identity {
@@ -56,6 +56,11 @@
         font-size: 2rem;
         font-weight: 500;
         margin-top: 0.4rem;
+    }
+
+    .game-ko-data {
+        display: flex;
+        flex-direction: column;
     }
 
     &.fixture-block--row {
@@ -99,6 +104,42 @@
 
         .game-splitter {
             display: none;
+        }
+
+        .game-ko-data {
+            border-top: 0.1rem solid var(--tundora);
+            padding-top: 1rem;
+            margin-top: 2rem;
+            width: 100%;
+
+            .game-date-time {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@include md {
+    .fixture-block {
+        &.fixture-block--row {
+            .game-ko-data {
+                flex-direction: row;
+                margin: 2rem 6.5rem 0;
+                justify-content: center;
+                border-top: 0.1rem solid var(--tundora);
+                padding-top: 1rem;
+        
+                .game-date-time {
+                    flex-direction: row;
+                    margin: 0 1.2rem 0 0;
+                    padding-right: 1.2rem;
+                    border-right: 0.1rem solid var(--tundora);
+                }
+        
+                .game-time {
+                    margin-right: 1.2rem;
+                }
+            }
         }
     }
 }

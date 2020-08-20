@@ -1,0 +1,7 @@
+{{#each gamesData}}
+<div class="row row-mb-3">
+    <div class="col-12">
+        {{> @fixture-block gamesData=this hasResults=true variantClass="fixture-block--row"}}
+    </div>
+</div>
+{{/each}}

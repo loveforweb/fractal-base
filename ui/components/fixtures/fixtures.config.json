@@ -1,76 +1,39 @@
 {
-  "preview": "@preview-dark-col",
+  "preview": "@preview-col",
   "status": "ready",
   "context": {
     "title": "fixture-block",
-    "events": {
-      "games": [
-        {
-          "schedule": {
-            "startTime": "2019-09-29T08:10:00.000Z"
-          },
-          "score": {
-            "awayScoreTotal": 33,
-            "homeScoreTotal": 12,
-            "quarters": [
-              { "quarterNumber": 1, "awayScore": 13, "homeScore": 3 },
-              { "quarterNumber": 2, "awayScore": 9, "homeScore": 0 },
-              { "quarterNumber": 3, "awayScore": 0, "homeScore": 3 },
-              { "quarterNumber": 4, "awayScore": 0, "homeScore": 0 }
-            ]
-          }
-        }
-      ],
-      "references": {
-        "teamReferences": [
-          {
-            "id": 67,
-            "city": "Tennessee",
-            "name": "Titans",
-            "abbreviation": "TEN",
-            "homeVenue": { "id": 72, "name": "Nissan Stadium" },
-            "teamColoursHex": [
-              "#0c2340",
-              "#418fde",
-              "#c8102e",
-              "#8a8d8f",
-              "#a2aaad",
-              "#54585a"
-            ],
-            "socialMediaAccounts": [
-              { "mediaType": "TWITTER", "value": "Titans" }
-            ],
-            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/pln44vuzugjgipyidsre"
-          },
-          {
-            "id": 68,
-            "city": "Atlanta",
-            "name": "Falcons",
-            "abbreviation": "ATL",
-            "homeVenue": { "id": 62, "name": "Mercedes-Benz Stadium" },
-            "teamColoursHex": ["#a71930", "#000000", "#a5acaf"],
-            "socialMediaAccounts": [
-              { "mediaType": "TWITTER", "value": "AtlantaFalcons" }
-            ],
-            "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/d8m7hzpsbrl6pnqht8op"
-          }
-        ],
-        "venueReferences": [
-          {
+    "gamesData": {
+      "schedule": {
+        "startTime": "2019-09-29T08:10:00.000Z",
+        "awayTeam": {
+          "id": 67,
+          "abbreviation": "TEN",
+          "city": "Tennessee",
+          "name": "Titans",
+          "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/pln44vuzugjgipyidsre"
+        },
+        "homeTeam": {
+          "id": 68,
+          "abbreviation": "ATL",
+          "city": "Atlanta",
+          "name": "Falcons",
+          "officialLogoImageSrc": "https://static.www.nfl.com/image/private/t_q-best/league/d8m7hzpsbrl6pnqht8op"
+        },
+        "venue": {
             "id": 62,
             "name": "Mercedes-Benz Stadium",
-            "city": "Atlanta, GA",
-            "country": "USA",
-            "geoCoordinates": { "latitude": 33.755, "longitude": -84.401 },
-            "capacitiesByEventType": [
-              { "eventType": "SOCCER", "capacity": 71000 },
-              { "eventType": "FOOTBALL", "capacity": 75000 }
-            ],
-            "playingSurface": "FieldTurf Revolution 360",
-            "baseballDimensions": [],
-            "hasRoof": true,
-            "hasRetractableRoof": true
-          }
+            "city": "Atlanta, GA"
+        }
+      },
+      "score": {
+        "awayScoreTotal": 33,
+        "homeScoreTotal": 12,
+        "quarters": [
+          { "quarterNumber": 1, "awayScore": 13, "homeScore": 3 },
+          { "quarterNumber": 2, "awayScore": 9, "homeScore": 0 },
+          { "quarterNumber": 3, "awayScore": 0, "homeScore": 3 },
+          { "quarterNumber": 4, "awayScore": 0, "homeScore": 0 }
         ]
       }
     }

@@ -1,16 +1,16 @@
 .tags {
     a {
         padding: .2rem .6rem;
-        color: var(--midnight-blue);
-        border: .1rem solid #232323;
+        color: white;
+        border: .1rem solid white;
         display: inline-block;
         font-size: 1rem;
         text-decoration: none;
         margin: 0 1rem 1rem 0;
         
         &:hover {
-            background: var(--midnight-blue);
-            color: white;
+            color: var(--midnight-blue);
+            background: white;
         }
     }
 }

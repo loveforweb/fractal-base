@@ -3,11 +3,11 @@
         <div class="game-details">
             <div class="team team--home">
                 <div class="team-identity">
-                    {{> @team-badge teamBadge=events.references.teamReferences.1.officialLogoImageSrc}}
-                    {{> @team-name city=events.references.teamReferences.1.city name=events.references.teamReferences.1.name abbreviation=events.references.teamReferences.1.abbreviation}}
+                    {{> @team-badge teamBadge=gamesData.schedule.homeTeam.officialLogoImageSrc}}
+                    {{> @team-name city=gamesData.schedule.homeTeam.city name=gamesData.schedule.homeTeam.name abbreviation=gamesData.schedule.homeTeam.abbreviation}}
                 </div>
                 {{#if hasResults}}
-                    {{> @team-score scoreTotal=events.games.0.score.homeScoreTotal}}
+                    {{> @team-score scoreTotal=gamesData.score.homeScoreTotal}}
                 {{else}}
                     {{#if variantClass}}
                         {{> @team-score scoreTotal=0}}
@@ -19,11 +19,11 @@
 
             <div class="team team--away">
                 <div class="team-identity">
-                    {{> @team-badge teamBadge=events.references.teamReferences.0.officialLogoImageSrc}}
-                    {{> @team-name city=events.references.teamReferences.0.city name=events.references.teamReferences.0.name abbreviation=events.references.teamReferences.0.abbreviation}}
+                    {{> @team-badge teamBadge=gamesData.schedule.awayTeam.officialLogoImageSrc}}
+                    {{> @team-name city=gamesData.schedule.awayTeam.city name=gamesData.schedule.awayTeam.name abbreviation=gamesData.schedule.awayTeam.abbreviation}}
                 </div>
                 {{#if hasResults}}
-                    {{> @team-score scoreTotal=events.games.0.score.awayScoreTotal}}
+                    {{> @team-score scoreTotal=gamesData.score.awayScoreTotal}}
                 {{else}}
                     {{#if variantClass}}
                         {{> @team-score scoreTotal=0}}
@@ -34,13 +34,12 @@
     </div>
 
     <div class="fixture-block-row">
-        {{> @game-date-time date="Sun 8th September 2019" time="18:00"}}
+        <div class="game-ko-data">
+            {{> @game-date-time date="Sun 8th September 2019" time="18:00"}}
+            {{> @stadium-name-city name=gamesData.schedule.venue.name city=gamesData.schedule.venue.city}}
+        </div>
     </div>
-
-    <div class="fixture-block-row">
-        {{> @stadium-name-city name=events.references.venueReferences.0.name city=events.references.venueReferences.0.city}}
-    </div>
-    {{#if hasResults}}
+    {{#if game.driveSummary}}
     <div class="fixture-block-row">
         <h2>Drive summary</h2>
         <div class="accordion">

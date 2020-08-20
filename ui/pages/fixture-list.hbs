@@ -1,4 +1,13 @@
-<div class="row">
-    <div class="col-12 col-md-6">{{render '@fixture-block-result'}}</div>
-    <div class="col-12 col-md-6">{{render '@fixture-block-result'}}</div>
-</div>
+{{#each gamesData}}
+    {{#isEven @index 2 0}}
+        <div class="row row-mb-3">
+    {{/isEven}}
+
+        <div class="col-12 col-md-6">
+            {{> @fixture-block gamesData=this hasResults=true}}
+        </div>
+
+    {{#isEven @index 2 1}}
+        </div>
+    {{/isEven}}
+{{/each}}
