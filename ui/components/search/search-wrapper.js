@@ -1,6 +1,6 @@
 /**
- * COMPONENT - Example 1.0
- * @module Example
+ * COMPONENT - SearchComponent 1.0
+ * @module SearchComponent
  */
 'use strict';
 

@@ -10,7 +10,8 @@
     "bootstrap": "^4.5.2",
     "generate-template-files": "^3.0.0",
     "gulp-remove-content": "^1.0.1",
-    "gulp-tap": "^2.0.0"
+    "gulp-tap": "^2.0.0",
+    "tablesort": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
