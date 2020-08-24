@@ -2,7 +2,7 @@
     "preview": "@preview",
     "status": "wip",
     "context": {
-        "lastUpdatedOn": "2020-08-19T16:29:53.969Z",
+        "lastUpdatedOn": "2020-08-24T11:36:55.926Z",
         "playerStatsTotals": [
             {
                 "player": {
@@ -55,25 +55,25 @@
                         "qbRating": 0.0
                     },
                     "rushing": {
-                        "rushAttempts": 24,
-                        "rushYards": 150,
+                        "rushAttempts": 28,
+                        "rushYards": 120,
                         "rushAverage": 4.8,
                         "rushTD": 0,
-                        "rushLng": 63,
-                        "rush1stDowns": 5,
-                        "rush1stDownsPct": 18.3,
+                        "rushLng": 48,
+                        "rush1stDowns": 4,
+                        "rush1stDownsPct": 12.9,
                         "rush20Plus": 0,
                         "rush40Plus": 0,
                         "rushFumbles": 0
                     },
                     "receiving": {
-                        "targets": 12,
-                        "receptions": 21,
-                        "recYards": 73,
-                        "recAverage": 4.3,
+                        "targets": 19,
+                        "receptions": 12,
+                        "recYards": 74,
+                        "recAverage": 4.5,
                         "recTD": 0,
-                        "recLng": 60,
-                        "rec1stDowns": 6,
+                        "recLng": 51,
+                        "rec1stDowns": 7,
                         "rec20Plus": 0,
                         "rec40Plus": 0,
                         "recFumbles": 0
@@ -81,7 +81,7 @@
                     "tackles": {
                         "tackleSolo": 6,
                         "tackleTotal": 6,
-                        "tackleAst": 1,
+                        "tackleAst": 0,
                         "sacks": 0.0,
                         "sackYds": 0,
                         "tacklesForLoss": 0
@@ -100,7 +100,7 @@
                     },
                     "fumbles": {
                         "fumbles": 1,
-                        "fumLost": 0,
+                        "fumLost": 1,
                         "fumForced": 0,
                         "fumOwnRec": 0,
                         "fumOppRec": 0,
@@ -109,12 +109,12 @@
                         "fumTD": 0
                     },
                     "kickoffReturns": {
-                        "krRet": 15,
-                        "krYds": 214,
-                        "krAvg": 33.2,
-                        "krLng": 312,
+                        "krRet": 16,
+                        "krYds": 289,
+                        "krAvg": 26.2,
+                        "krLng": 201,
                         "krTD": 0,
-                        "kr20Plus": 9,
+                        "kr20Plus": 12,
                         "kr40Plus": 0,
                         "krFC": 0,
                         "krFum": 0
@@ -266,8 +266,8 @@
                 "stats": {
                     "gamesPlayed": 1,
                     "tackles": {
-                        "tackleSolo": 0,
-                        "tackleTotal": 7,
+                        "tackleSolo": 1,
+                        "tackleTotal": 5,
                         "tackleAst": 5,
                         "sacks": 0.0,
                         "sackYds": 0,
@@ -279,7 +279,7 @@
                         "intYds": 0,
                         "intAverage": 0.0,
                         "intLng": 0,
-                        "passesDefended": 0,
+                        "passesDefended": 1,
                         "stuffs": 0,
                         "stuffYds": 0,
                         "safeties": 0,
@@ -358,8 +358,8 @@
                         "tackleSolo": 1,
                         "tackleTotal": 2,
                         "tackleAst": 1,
-                        "sacks": 1.2,
-                        "sackYds": 18,
+                        "sacks": 1.0,
+                        "sackYds": 10,
                         "tacklesForLoss": 0
                     },
                     "interceptions": {
@@ -369,15 +369,15 @@
                         "intAverage": 0.0,
                         "intLng": 0,
                         "passesDefended": 0,
-                        "stuffs": 1,
-                        "stuffYds": 10,
+                        "stuffs": 2,
+                        "stuffYds": 12,
                         "safeties": 0,
                         "kB": 0
                     },
                     "fumbles": {
                         "fumbles": 0,
                         "fumLost": 0,
-                        "fumForced": 0,
+                        "fumForced": 1,
                         "fumOwnRec": 0,
                         "fumOppRec": 0,
                         "fumRecYds": 0,
@@ -444,29 +444,29 @@
                 "stats": {
                     "gamesPlayed": 14,
                     "tackles": {
-                        "tackleSolo": 37,
-                        "tackleTotal": 26,
-                        "tackleAst": 6,
+                        "tackleSolo": 29,
+                        "tackleTotal": 43,
+                        "tackleAst": 4,
                         "sacks": 0.0,
                         "sackYds": 0,
                         "tacklesForLoss": 2
                     },
                     "interceptions": {
-                        "interceptions": 1,
+                        "interceptions": 0,
                         "intTD": 0,
-                        "intYds": 19,
-                        "intAverage": 17.2,
-                        "intLng": 17,
-                        "passesDefended": 4,
-                        "stuffs": 2,
-                        "stuffYds": 8,
+                        "intYds": 15,
+                        "intAverage": 18.9,
+                        "intLng": 26,
+                        "passesDefended": 2,
+                        "stuffs": 1,
+                        "stuffYds": 10,
                         "safeties": 0,
                         "kB": 0
                     },
                     "fumbles": {
                         "fumbles": 0,
                         "fumLost": 0,
-                        "fumForced": 1,
+                        "fumForced": 0,
                         "fumOwnRec": 0,
                         "fumOppRec": 0,
                         "fumRecYds": 0,
@@ -496,7 +496,7 @@
                         "prFum": 0
                     },
                     "miscellaneous": {
-                        "gamesStarted": 10
+                        "gamesStarted": 14
                     }
                 }
             },
@@ -563,20 +563,20 @@
                         "rushFumbles": 0
                     },
                     "receiving": {
-                        "targets": 162,
-                        "receptions": 75,
-                        "recYards": 687,
-                        "recAverage": 13.6,
-                        "recTD": 6,
-                        "recLng": 252,
-                        "rec1stDowns": 43,
-                        "rec20Plus": 7,
+                        "targets": 127,
+                        "receptions": 72,
+                        "recYards": 638,
+                        "recAverage": 15.7,
+                        "recTD": 3,
+                        "recLng": 249,
+                        "rec1stDowns": 49,
+                        "rec20Plus": 15,
                         "rec40Plus": 2,
                         "recFumbles": 0
                     },
                     "tackles": {
-                        "tackleSolo": 2,
-                        "tackleTotal": 1,
+                        "tackleSolo": 1,
+                        "tackleTotal": 2,
                         "tackleAst": 0,
                         "sacks": 0.0,
                         "sackYds": 0,
@@ -596,11 +596,11 @@
                     },
                     "fumbles": {
                         "fumbles": 2,
-                        "fumLost": 1,
+                        "fumLost": 0,
                         "fumForced": 0,
                         "fumOwnRec": 0,
                         "fumOppRec": 0,
-                        "fumRecYds": 1,
+                        "fumRecYds": 0,
                         "fumTotalRec": 0,
                         "fumTD": 0
                     },
@@ -627,14 +627,14 @@
                         "prFum": 0
                     },
                     "miscellaneous": {
-                        "gamesStarted": 14
+                        "gamesStarted": 15
                     },
                     "twoPointAttempts": {
                         "twoPtAtt": 0,
-                        "twoPtMade": 0,
-                        "twoPtPassAtt": 0,
+                        "twoPtMade": 1,
+                        "twoPtPassAtt": 1,
                         "twoPtPassMade": 0,
-                        "twoPtPassRec": 1,
+                        "twoPtPassRec": 0,
                         "twoPtRushAtt": 0,
                         "twoPtRushMade": 0
                     }
@@ -673,12 +673,12 @@
                 "stats": {
                     "gamesPlayed": 14,
                     "tackles": {
-                        "tackleSolo": 50,
-                        "tackleTotal": 96,
-                        "tackleAst": 14,
-                        "sacks": 4.3,
-                        "sackYds": 32,
-                        "tacklesForLoss": 15
+                        "tackleSolo": 89,
+                        "tackleTotal": 72,
+                        "tackleAst": 18,
+                        "sacks": 6.1,
+                        "sackYds": 70,
+                        "tacklesForLoss": 9
                     },
                     "interceptions": {
                         "interceptions": 0,
@@ -686,9 +686,9 @@
                         "intYds": 0,
                         "intAverage": 0.0,
                         "intLng": 0,
-                        "passesDefended": 5,
-                        "stuffs": 13,
-                        "stuffYds": 67,
+                        "passesDefended": 4,
+                        "stuffs": 17,
+                        "stuffYds": 45,
                         "safeties": 0,
                         "kB": 0
                     },
@@ -697,8 +697,8 @@
                         "fumLost": 0,
                         "fumForced": 2,
                         "fumOwnRec": 0,
-                        "fumOppRec": 1,
-                        "fumRecYds": 20,
+                        "fumOppRec": 0,
+                        "fumRecYds": 34,
                         "fumTotalRec": 0,
                         "fumTD": 0
                     },
@@ -780,11 +780,11 @@
                         "qbRating": 0.0
                     },
                     "rushing": {
-                        "rushAttempts": 8,
-                        "rushYards": 12,
-                        "rushAverage": 1.7,
+                        "rushAttempts": 4,
+                        "rushYards": 13,
+                        "rushAverage": 1.2,
                         "rushTD": 0,
-                        "rushLng": 7,
+                        "rushLng": 11,
                         "rush1stDowns": 0,
                         "rush1stDownsPct": 0.0,
                         "rush20Plus": 0,
@@ -902,9 +902,9 @@
                 "stats": {
                     "gamesPlayed": 16,
                     "tackles": {
-                        "tackleSolo": 6,
-                        "tackleTotal": 8,
-                        "tackleAst": 2,
+                        "tackleSolo": 8,
+                        "tackleTotal": 7,
+                        "tackleAst": 1,
                         "sacks": 0.0,
                         "sackYds": 0,
                         "tacklesForLoss": 1
@@ -954,7 +954,7 @@
                         "prFum": 0
                     },
                     "miscellaneous": {
-                        "gamesStarted": 2
+                        "gamesStarted": 4
                     }
                 }
             },
@@ -991,8 +991,8 @@
                 "stats": {
                     "gamesPlayed": 6,
                     "tackles": {
-                        "tackleSolo": 2,
-                        "tackleTotal": 3,
+                        "tackleSolo": 1,
+                        "tackleTotal": 2,
                         "tackleAst": 1,
                         "sacks": 0.0,
                         "sackYds": 0,
