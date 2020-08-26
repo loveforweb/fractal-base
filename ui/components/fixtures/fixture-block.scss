@@ -23,13 +23,13 @@
         display: flex;
         flex-direction: column;
 
-        &.team--home {
+        &.team--away {
             .team-badge {
                 order: 1;
             }
         }
 
-        &.team--away {
+        &.team--home {
             .team-score {
                 margin-left: auto;
             }
@@ -83,7 +83,7 @@
         }
 
         .team {
-            &.team--home {
+            &.team--away {
                 .team-badge {
                     order: 0;
                 }
