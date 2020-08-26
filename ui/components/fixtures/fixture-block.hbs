@@ -1,21 +1,6 @@
 <div class="component fixture-block {{variantClass}}">
     <div class="fixture-block-row">
         <div class="game-details">
-            <div class="team team--home">
-                <div class="team-identity">
-                    {{> @team-badge teamBadge=gamesData.schedule.homeTeam.officialLogoImageSrc}}
-                    {{> @team-name city=gamesData.schedule.homeTeam.city name=gamesData.schedule.homeTeam.name abbreviation=gamesData.schedule.homeTeam.abbreviation}}
-                </div>
-                {{#if hasResults}}
-                    {{> @team-score scoreTotal=gamesData.score.homeScoreTotal}}
-                {{else}}
-                    {{#if variantClass}}
-                        {{> @team-score scoreTotal=0}}
-                    {{/if}}
-                {{/if}}
-            </div>
-
-            <div class="game-splitter">@</div>
 
             <div class="team team--away">
                 <div class="team-identity">
@@ -30,6 +15,23 @@
                     {{/if}}
                 {{/if}}
             </div>
+
+            <div class="game-splitter">@</div>
+
+             <div class="team team--home">
+                <div class="team-identity">
+                    {{> @team-badge teamBadge=gamesData.schedule.homeTeam.officialLogoImageSrc}}
+                    {{> @team-name city=gamesData.schedule.homeTeam.city name=gamesData.schedule.homeTeam.name abbreviation=gamesData.schedule.homeTeam.abbreviation}}
+                </div>
+                {{#if hasResults}}
+                    {{> @team-score scoreTotal=gamesData.score.homeScoreTotal}}
+                {{else}}
+                    {{#if variantClass}}
+                        {{> @team-score scoreTotal=0}}
+                    {{/if}}
+                {{/if}}
+            </div>
+
         </div>
     </div>
 
